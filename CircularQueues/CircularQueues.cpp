@@ -10,7 +10,12 @@ public:
         REAR = -1;
     }
 
-
+    void insert() {
+        int num;
+        cout << "enter a number" l
+            cint << num;
+        cout << endl;
+    }
 };
 int main()
 {
