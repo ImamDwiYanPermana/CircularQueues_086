@@ -34,7 +34,15 @@ public:
         }
         queues_array[REAR] = num;
     }
-    
+    void remove() {
+        //cek apakah antrian ksong
+        if (FRONT == -1) {
+            cout << " Queue underFlow\n";
+            return;
+        }
+        cout << "\n The element deleted from ithe queue is: " << queues_array[FRONT] << "\n";
+    }
+};
 int main()
 {
     std::cout << "Hello World!\n";
