@@ -20,6 +20,11 @@ public:
             cout << "\nQueue overFlow\n";
             return;
         }
-       
+        // cek apakah antrain kosong 
+        if (FRONT == 0) {
+            FRONT == 0;
+            REAR == 0;
+        }
+        
 
 
