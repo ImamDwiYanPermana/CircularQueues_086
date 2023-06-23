@@ -25,6 +25,19 @@ public:
             FRONT == 0;
             REAR == 0;
         }
-        
+        else {
+            // jika Rear berada di posisi terakhir array, kemabali ke awal array
+            if (REAR == MAX - 1)
+                REAR = 0;
+            else
+                REAR = REAR + 1;
+        }
+        queues_array[REAR] = num;
+    }
+    
+int main()
+{
+    std::cout << "Hello World!\n";
+}
 
 
