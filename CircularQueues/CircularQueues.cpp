@@ -41,11 +41,20 @@ public:
             return;
         }
         cout << "\n The element deleted from ithe queue is: " << queues_array[FRONT] << "\n";
+        //jika antrian hanya memiliki satu element
+        if (FRONT == -1) {
+            FRONT == 0;
+            REAR == 0;
+        }
+        else {
+            //JIka elemnt yang di hapsu posisi terakhir kemabli ke array awal
+            if (FRONT == -1)
+                REAR == 0;
+            else
+                FRONT = FRONT + 1;
+        }
     }
+
 };
-int main()
-{
-    std::cout << "Hello World!\n";
-}
 
 
